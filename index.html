@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema is absolute</title>
+    <style>
+        *{margin: 0; box-sizing: border-box;}
+        body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        img{max-width: 100%;}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+section figure{flex: 1 1 100%;}
+section.content{flex: 0 1 auto;}
+
+figure{display: flex;}
+section figure img {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+.row{display: flex; gap:1rem;}
+.row > *{flex: 1;}
+.content{padding: 1rem;}
+
+html,body{scroll-snap-type: y mandatory;}
+section{scroll-snap-align:start ;}
+
+        /* section{outline: 5px solid rgb(255, 51, 0);outline-offset: -2px;}
+        figure{outline: 5px solid orange;outline-offset: -5px;}
+        .content{outline: 5px solid rgb(0, 119, 255);outline-offset: -5px;} */
+    </style>
+</head>
+<body>
+    
+<section>
+    <figure>
+        <img src="racehorse.gif" alt="racehorse.gif">
+    </figure>
+    <div class="content row">
+        <h3>TOP 5 best titles</h3>
+        <p>A paragraph is a distinct section of a written work that develops a single topic or idea through a series of related
+        sentences. It is typically marked by an indent or a new line, and its main purpose is to organize and structure text,
+        making it easier for readers to follow the author's thoughts.</p>
+        <p>A paragraph is a distinct section of a written work that develops a single topic or idea through a series of related
+        sentences. It is typically marked by an indent or a new line, and its main purpose is to organize and structure text,
+        making it easier for readers to follow the author's thoughts.</p>
+
+    </div>
+</section>
+<section>
+    <figure>
+        <img src="racehorse.gif" alt="racehorse.gif">
+    </figure>
+    <div class="content row">
+        <h3>TOP 5 best titles</h3>
+        <p>A paragraph is a distinct section of a written work that develops a single topic or idea through a series of
+            related
+            sentences. It is typically marked by an indent or a new line, and its main purpose is to organize and
+            structure text,
+            making it easier for readers to follow the author's thoughts.</p>
+        <p>A paragraph is a distinct section of a written work that develops a single topic or idea through a series of
+            related
+            sentences. It is typically marked by an indent or a new line, and its main purpose is to organize and
+            structure text,
+            making it easier for readers to follow the author's thoughts.</p>
+
+    </div>
+</section>
+<section>
+    <figure>
+        <img src="racehorse.gif" alt="racehorse.gif">
+    </figure>
+    <div class="content row">
+        <h3>TOP 5 best titles</h3>
+        <p>A paragraph is a distinct section of a written work that develops a single topic or idea through a series of
+            related
+            sentences. It is typically marked by an indent or a new line, and its main purpose is to organize and
+            structure text,
+            making it easier for readers to follow the author's thoughts.</p>
+        <p>A paragraph is a distinct section of a written work that develops a single topic or idea through a series of
+            related
+            sentences. It is typically marked by an indent or a new line, and its main purpose is to organize and
+            structure text,
+            making it easier for readers to follow the author's thoughts.</p>
+
+    </div>
+</section>
+</body>
+</html>
